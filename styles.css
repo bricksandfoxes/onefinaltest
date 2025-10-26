@@ -191,13 +191,8 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .content h1 {
-        font-size: 40px;
-    }
-
-    .contact-container {
-        width: 90%;
-        top: 30%;
+    .background-image {
+        width: 150px;
     }
 }
 
