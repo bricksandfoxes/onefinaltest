@@ -19,7 +19,7 @@ body {
 .info-content {
     text-align: center;
     position: relative;
-    height: 300px; /* Fixed height to maintain spacing */
+    height: 300px; 
 }
 
 .form {
@@ -200,7 +200,7 @@ footer {
     .info-content {
         text-align: center;
         position: relative;
-        height: 300px; /* Fixed height to maintain spacing */
+        height: 500px; /* Fixed height to maintain spacing */
     }
 
 }
