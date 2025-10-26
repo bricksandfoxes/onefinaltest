@@ -4,9 +4,9 @@ body {
     font-family: 'Avant Garde Gothic', sans-serif;
 }
 
-.background-video {
+.background-image {
     position: absolute;
-    right: 0;
+    right: 50;
     bottom: 0;
     z-index: -1;
 }
