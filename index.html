@@ -6,11 +6,29 @@
     <title>PrimeBug</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles.css">
-</html>
+    <script src="scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Avant+Garde+Gothic" rel="stylesheet">
+</head>
 <body>
-    <video autoplay muted loop id="background-video">
-        <source src="https://bricebeairdmusic.com/background-mp4/" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <p> Does this  work? </p>
+    <div class = "content">
+        <video autoplay muted loop plays-inline class="background-video">
+            <source src="https://videos.files.wordpress.com/1ag8H0C9/background.mp4" type="video/mp4">
+        </video>
+        <div class = "info-content">
+            <img src="images/logos.png" alt="PrimeBug Logo" class="pb-logo">
+            <h1>Coming Soon</h1>
+            <button class="contact-button" id="contactBtn">Contact Us</button>
+            <div class ="coming-soon" id="comingSoon">Feature coming soon!</div>
+            <form>
+                <div class = "contact-container" id="formContainer">
+                    <input type="email" placeholder="Enter your email" class="email-input" required>
+                    <input type="text" placeholder="Enter your message" class="message-input" required> 
+                    <div class="button-group">
+                        <input type="button" value="Cancel" class="cancel-button" id="cancelBtn">
+                        <input type="submit" value="Submit" class="submit-button">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
