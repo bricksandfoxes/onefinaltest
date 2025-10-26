@@ -192,8 +192,9 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .background-image {
-        width: 150px;
+        position: absolute;
     }
+
 }
 
 
