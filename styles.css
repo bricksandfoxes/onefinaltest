@@ -2,13 +2,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Avant Garde Gothic', sans-serif;
-}
-
-.background-image {
-    position: absolute;
-    right: 50;
-    bottom: 0;
-    z-index: -1;
+    background-image: url('images/background.jpeg');
+    background-size: cover;
 }
 
 .content {
@@ -200,6 +195,12 @@ footer {
         flex-direction: column;
         width: 100%;
         height: fill-available;
+    }
+    
+    .info-content {
+        text-align: center;
+        position: relative;
+        height: 300px; /* Fixed height to maintain spacing */
     }
 
 }
