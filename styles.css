@@ -149,6 +149,7 @@ body {
     color: white;
 }
 
+
 .content h1 {
     font-size: 70px;
     color: white;
@@ -160,19 +161,7 @@ body {
     height: auto;
 }
 
-h2 {
-    color: white;
-    font-size: 16px;
-    margin-top: 20px;
-}
 
-.social-logo {
-    width: 25px;
-    height: auto;
-    margin: 0 10px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
 
 footer {
     position: absolute;
@@ -201,6 +190,10 @@ footer {
         text-align: center;
         position: relative;
         height: 500px; /* Fixed height to maintain spacing */
+    }
+
+    .content h1 {
+        font-size: 52px;
     }
 
 }
