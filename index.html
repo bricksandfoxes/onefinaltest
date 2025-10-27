@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="styles.css?v=1.1">
     <script src="scripts.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Avant+Garde+Gothic" rel="stylesheet">
+    <script type="text/javascript" 
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "H66oJnIRFSxvYx-zz",
+            });
+        })();
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <div class = "content">
@@ -16,13 +27,18 @@
             <img src="images/logos.png" alt="PrimeBug Logo" class="pb-logo">
             <h1>Coming Soon</h1>
             <button class="contact-button" id="contactBtn">Contact Us</button>
-            <form>
+            <form id="contactForm">
                 <div class = "contact-container" id="formContainer">
-                    <input type="email" placeholder="Enter your email" class="email-input" required>
-                    <input type="text" placeholder="Enter your message" class="message-input" required> 
+                    <input type="text" placeholder="Enter your name" class="name-input" id="name" required>
+                    <input type="email" placeholder="Enter your email" class="email-input" id="email" required>
+                    <textarea placeholder="Enter your message" class="message-input" id="message" required></textarea>
                     <div class="button-group">
                         <input type="button" value="Cancel" class="cancel-button" id="cancelBtn">
-                        <input type="submit" value="Submit" class="submit-button">
+                        <button class="g-recaptcha submit-button" 
+                            data-sitekey="6LeiU_grAAAAAO1aplPBmvm0BzsORrJAllNWLIcq"
+                            data-callback="onSubmit">
+                            Submit
+                        </button>
                     </div>
                 </div>
             </form>
@@ -31,5 +47,5 @@
             <p>&copy; 2025 PrimeBug. All rights reserved. Designed by Beaird</p>
         </footer>
     </div>
-
 </body>
+</html>
