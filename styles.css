@@ -108,6 +108,7 @@ body {
     resize: vertical;
     background-color: transparent;
     color: white;
+    font-family: 'Avant Garde Gothic', sans-serif;
 }
 .email-input, .message-input, .name-input {
     caret-color: white;
@@ -209,6 +210,15 @@ footer {
 
     .content h1 {
         font-size: 52px;
+    }
+
+    .contact-container.active {
+        width: 90%;
+        margin: 0;
+    }
+
+    footer {
+        font-size: 12px;
     }
 
 }
