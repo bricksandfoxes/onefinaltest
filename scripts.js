@@ -9,9 +9,8 @@ const submitBtn = document.getElementById('submitBtn');
     //comingSoon.classList.add('active');
 //});
 
-function onSubmit(token) {
-    // Prevent default form submission
-    event.preventDefault();
+function sendEmail(e) {
+    e.preventDefault(); // Prevent form submission
     
     const templateParams = {
         from_name: document.getElementById('name').value,
@@ -25,17 +24,13 @@ function onSubmit(token) {
             contactForm.reset();
             formContainer.classList.remove('active');
             contactBtn.style.display = 'inline-block';
-            // Reset the reCAPTCHA
-            grecaptcha.reset();
         })
         .catch((error) => {
             console.error("Error sending message:", error);
             alert("Failed to send the message.");
-            // Reset the reCAPTCHA on error too
-            grecaptcha.reset();
         });
 
-    return false;
+    return false; // Additional safety to prevent form submission
 }
 
 contactBtn.addEventListener('click', function() {
@@ -49,4 +44,4 @@ cancelBtn.addEventListener('click', function() {
     contactForm.reset();
 });
 
-contactForm.addEventListener('submit', onSubmit);
+contactForm.addEventListener('submit', sendEmail);
